@@ -1,8 +1,10 @@
 import { google, sheets_v4 } from 'googleapis';
 
+const googleCredentials = JSON.parse(process.env.GOOGLE_JSON);
+
 // Inicializa la autenticación con las credenciales del servicio
 const auth = new google.auth.GoogleAuth({
-    keyFile: './google.json',
+    keyFile: googleCredentials,
     scopes: ['https://www.googleapis.com/auth/spreadsheets']
 });
 
