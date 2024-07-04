@@ -7,11 +7,9 @@ import * as path from 'path';
 
 import moment from 'moment-timezone';
 
-import { getSheetLastRow, readSheet, appendToSheet } from 'utils';
 import { getRowByPhoneNumber, appendToSheetContacts, getDataByPhoneNumber } from 'contacts';
 import { chat } from 'chatGPT';
-import { tts } from 'tts.js';
-import { handlerAI } from 'whisper';
+
 
 const PORT = process.env.PORT ?? 3008
 
