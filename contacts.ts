@@ -1,12 +1,33 @@
+import dotenv from 'dotenv';
 import { google, sheets_v4 } from 'googleapis';
+import path from 'path';
+import fs, { existsSync } from 'fs';
+dotenv.config()
 
 const googleCredentials = JSON.parse(process.env.GOOGLE_JSON);
 
+if (!googleCredentials){
+    throw new Error('GOOGLE_JSON environment variable is not defined');
+}
+
+const googleJsonPath = path.join(process.cwd(), 'google.json');
+
+if (!existsSync(googleJsonPath)){
+    try{
+        fs.writeFileSync(googleJsonPath, JSON.stringify(googleCredentials, null, 2));
+        console.log('google.json creado correctamente')
+    }catch(error){
+        throw new Error(`error al crear el archivo' ${error.message}`);
+    }
+}else{
+    console.log("archivo creado correctamente00");
+}
 // Inicializa la autenticación con las credenciales del servicio
 const auth = new google.auth.GoogleAuth({
-    keyFile: googleCredentials,
+    keyFile: 'google.json',
     scopes: ['https://www.googleapis.com/auth/spreadsheets']
 });
+
 
 // ID de la hoja de cálculo y rango de la hoja
 const spreadsheetId = '1X5uZDJuExhrFIKsMtl3fpzAb8hcacyKI8giKA2kLxtc';
