@@ -1,0 +1,16 @@
+[33m8e34c85[m[33m ([m[1;36mHEAD[m[33m)[m HEAD@{0}: rebase (start): checkout 8e34c853b05e67217650b78b834f7649d3f145bc
+[33m816f895[m[33m ([m[1;32m472024pp[m[33m)[m HEAD@{1}: commit: Añadir .gitignore y eliminar archivos del índice
+[33md93e69c[m[33m ([m[1;32m1ropp[m[33m)[m HEAD@{2}: checkout: moving from 1ropp to 472024pp
+[33md93e69c[m[33m ([m[1;32m1ropp[m[33m)[m HEAD@{3}: commit: primera subida
+[33m032033f[m HEAD@{4}: checkout: moving from main to 1ropp
+[33m10b05ac[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{5}: checkout: moving from julio24 to main
+[33m5db9260[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m, [m[1;32mjulio24[m[33m)[m HEAD@{6}: checkout: moving from master to julio24
+[33m5db9260[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m, [m[1;32mjulio24[m[33m)[m HEAD@{7}: checkout: moving from master to master
+[33m5db9260[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m, [m[1;32mjulio24[m[33m)[m HEAD@{8}: commit (amend): primera subida del bot
+[33m5d853bd[m HEAD@{9}: commit (amend): primera subida del bot
+[33m032033f[m HEAD@{10}: reset: moving to HEAD~0
+[33m032033f[m HEAD@{11}: rebase (finish): returning to refs/heads/master
+[33m032033f[m HEAD@{12}: rebase (start): checkout HEAD~0
+[33m032033f[m HEAD@{13}: rebase (finish): returning to refs/heads/master
+[33m032033f[m HEAD@{14}: rebase (start): checkout HEAD~0
+[33m032033f[m HEAD@{15}: commit (initial): primera subida del bot
